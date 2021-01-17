@@ -1,0 +1,48 @@
+.normalButton {
+    display: block;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    height: 30px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tabsButton {
+    background-color: inherit;
+    display: inline;
+    float: left;
+    width: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tabsButton:hover {
+    background-color: #ddd;
+}
+
+.tabsButton.active {
+    background-color: #ccc;
+}
+
+.searchButton {
+    border: none;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    font-size: small;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: blue;
+}

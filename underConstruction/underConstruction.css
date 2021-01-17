@@ -1,0 +1,21 @@
+body, a {
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+#underConstructionImg {
+    object-fit: cover;
+    margin-top: 20vh;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    #underConstructionImg {
+        width: 100%;
+    }
+}

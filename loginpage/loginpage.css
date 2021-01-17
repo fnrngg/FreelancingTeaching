@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/loginbackground.jpg);
+}
+
+#loginLogo {
+    margin-top: 10px;
+    font-size: xx-large;
+}
+
+#login{
+    background-color: white;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 70px;
+    margin: auto;
+    padding-bottom: 15px;
+    height: fit-content;
+    width: 350px;
+    border-radius: 30px;
+}
+
+#loginForm {
+    width: 100%;
+    display: block;
+}
+
+#loginButton {
+    background-color: green;
+}
+
+#registerButton {
+    background-color: blue;
+}
+
+#registerForm {
+    width: 100%;
+    display: none;
+}
+
+.submitError {
+    color: red;
+    text-align: center;
+    font-size: small;
+    display: none;
+}
+
+
+/* @media only screen and (max-width: 768px) {
+} */

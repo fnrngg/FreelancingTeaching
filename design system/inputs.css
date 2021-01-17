@@ -1,0 +1,27 @@
+.normalInputs {
+    display: block;
+    border: 1px;
+    outline: none;
+    border-radius: 15px;
+    width: 60%;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: rgb(236, 232, 232);
+}
+
+.normalInputs.error {
+    border: 1px solid red;
+}
+
+.searchInput {
+    outline: none;
+    border-radius: 15px;
+    border: 1px;
+    padding: 5px;
+    padding-right: 65px;
+    padding-left: 15px;
+}

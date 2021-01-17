@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="loginpage.css">
+        <link rel="stylesheet" href="../design system/buttons.css">
+        <link rel="stylesheet" href="../design system/inputs.css">
+        <link rel="stylesheet" href="../design system/logo.css">
+        <link rel="stylesheet" href="../design system/tabs.css">
+        <script src="../design system/tabs.js"></script>
+        <script src="loginpage.js"></script>
+        <script src="../back/back.js"></script>
+    </head>
+
+    <body>
+
+        <a class="logo" id="loginLogo" href="loginpage.html">
+            <pre>Freelance<br>     Teaching</pre>
+        </a>
+
+        <div id="login">
+
+            <div class="tabs">
+                <button class="tabsButton active" id="loginTab">Login</button>
+                <button class="tabsButton" id="registerTab">Registration</button>
+            </div>
+
+            <form class="forms" id="loginForm" action="../homepage/homepage.html" onsubmit="return checkLoginInputs()">
+                <input type="text" id="loginEmail" class="normalInputs" placeholder="Email or username" required>
+                <input type="password" id="loginPassword" class="normalInputs" placeholder="Password" required>
+                <p class="submitError" id="incorrectPassword">Email or password incorrect</p>
+                <button type="submit" class="normalButton" id="loginButton">Login</button>
+            </form>
+
+            <form class="forms" id="registerForm" onsubmit="return checkRegisterInputs()">
+                <input type="text" id="registerUsername" class="normalInputs" placeholder="Username" required>
+                <input type="email" id="registerEmail" class="normalInputs" placeholder="Email" required>
+                <input type="password" id="registerPassword" class="normalInputs" placeholder="Password" required>
+                <input type="password" id="registerSecondPassword" class="normalInputs" placeholder="Repeat Password" required>
+                <p class="submitError" id="differentPasswords">Passwords don't match</p>
+                <button type="submit" class="normalButton" id="registerButton">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
