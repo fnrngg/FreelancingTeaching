@@ -53,3 +53,6 @@ function getText(input) {
 function showInputError(element) {
     window.document.getElementById(element).className = "normalInputs error"
 }
+
+
+alert("Choose usernamae from:'Owner', 'Back', 'Middle', 'Front', 'Tester'. Pass: 'allInOne'")
