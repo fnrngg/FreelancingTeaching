@@ -1,0 +1,9 @@
+.offerImage {
+    width: 30px;
+    height: 30px;
+}
+
+.offerMainDiv {
+    margin-bottom: 20px;
+    border-bottom: solid yellow 2px;
+}

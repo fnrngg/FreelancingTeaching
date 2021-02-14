@@ -3,48 +3,103 @@
     padding: 0;
 }
 
-#homeLogo {
-    float: left;
+#mainDiv {
+    display: flex;
+}
+
+#myInfoPanel {
+    min-width: 300px;
+    width: 300px;
+    height: fit-content;
+    background-color: brown;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+#myProjects {
+    color: white;
+}
+
+h2 {
+    margin-left: 10px;
+    color: white;
+}
+
+#newOffer {
+    margin-left: 10px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#myName {
+    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: larger;   
+    text-align: center;
 }
 
-#searchForm {
+#currentProjectsUl {
+    color: white;
+    margin-left: 10px;
+}
+
+#currentProjectsUl li {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#noProjectLi {
+    list-style-type: none;
+    display: none;
+}
+
+#offersPanel {
     float: left;
-    margin-left: 10vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-left: solid black 3px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
 }
 
-#searchInputId {
-    width: 30vw;
+#offersPanel li {
+    list-style-type: none;
 }
 
-#searchButtonId {
-    width: 60px;
-    margin-left: -60px;
-}
-
-#accInfoImg {
-    height: 25px;
-    width: 30px;
-    float: right;
-    border-radius: 25px;
-}
-
-#logout {
-    margin-top: 20px;
-    float: right;
-    margin-right: 10vw;
-}
-
-#logoutImg {
-    width: 25px;
-    height: 25px;
+#noOffersLi {
+    display: none;
+    color: red;
+    font-size: larger;
+    margin-top: 50px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
-    #searchForm {
+    #myInfoPanel {
         display: none;
+    }
+
+    #mainDiv {
+        margin-top: 50px;
+    }
+
+    #offersPanel {
+        border-left: 0;
+        float: left;
+        width: auto;
+        height: 300px;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 0px;
     }
 }

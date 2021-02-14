@@ -1,3 +1,7 @@
+if (localStorage.getItem("accessToken") != null) {
+    window.location.href = "homepage.html"
+}
+
 document.addEventListener("click", (e) => {
     switch (e.target.id) {
       case "loginTab":

@@ -1,0 +1,121 @@
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 100px;
+    width: auto;
+    background-color: blue;
+    z-index: 2;
+}
+
+.menu.opened {
+    display: flex;
+}
+
+.menu.closed {
+    display: flex;
+}
+
+.closeMenu {
+    display: none;
+}
+
+.menu li {
+    padding: 10px;
+    width: 20%;
+    background-color: red;
+    color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.menuContent {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    float: left;
+    z-index: 3;
+    width: 100%;
+    background-color: yellow;
+}
+
+.menuContent li {
+    width: auto;
+    list-style-type: none;
+    background-color: blueviolet;
+    margin-top: 3px;
+}
+
+.closeMenu {
+    display: none;
+}
+
+.closeContent {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .menu.opened {
+        display: block;
+    }
+
+    .menu.closed {
+        display: none;
+    }
+
+    .menu li {
+        padding: 10px;
+        width: 100%;
+        background-color: red;
+        color: white;
+        margin-left: 0px;
+        margin-right: 0px;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+    }
+
+    .menuContent {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        float: left;
+        z-index: 3;
+        width: 100%;
+        background-color: yellow;
+    }
+
+    .menuContent li {
+        width: auto;
+        list-style-type: none;
+        background-color: blueviolet;
+        margin-top: 0px;
+    }
+
+    .closeMenu {
+        display: block;
+        text-align: start !important;
+    }
+
+    .closeContent {
+        display: block;
+        text-align: start !important;
+    }
+}

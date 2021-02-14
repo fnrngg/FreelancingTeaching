@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="loginpage.css">
-        <link rel="stylesheet" href="../design system/buttons.css">
-        <link rel="stylesheet" href="../design system/inputs.css">
-        <link rel="stylesheet" href="../design system/logo.css">
-        <link rel="stylesheet" href="../design system/tabs.css">
-        <script src="../design system/tabs.js"></script>
-        <script src="loginpage.js"></script>
-        <script src="../back/back.js"></script>
+        <link rel="stylesheet" href="loginpage/loginpage.css">
+        <link rel="stylesheet" href="/design system/buttons.css">
+        <link rel="stylesheet" href="/design system/inputs.css">
+        <link rel="stylesheet" href="/design system/logo.css">
+        <link rel="stylesheet" href="/design system/tabs.css">
+        <script src="/back/back.js"></script>
+        <script src="/design system/tabs.js"></script>
+        <script src="loginpage/loginpage.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 
     <body>
 
-        <a class="logo" id="loginLogo" href="loginpage.html">
+        <a class="logo" id="loginLogo" href="homepage.html">
             <pre>Freelance<br>     Teaching</pre>
         </a>
 
-        <div id="login">
+        <div id="loginAndRegister">
 
             <div class="tabs">
                 <button class="tabsButton active" id="loginTab">Login</button>
                 <button class="tabsButton" id="registerTab">Registration</button>
             </div>
 
-            <form class="forms" id="loginForm" action="../homepage/homepage.html" onsubmit="return checkLoginInputs()">
+            <form class="forms" id="loginForm" action="../homepage.html" onsubmit="return checkLoginInputs()">
                 <input type="text" id="loginEmail" class="normalInputs" placeholder="Email or username" required>
                 <input type="password" id="loginPassword" class="normalInputs" placeholder="Password" required>
                 <p class="submitError" id="incorrectPassword">Email or password incorrect</p>
